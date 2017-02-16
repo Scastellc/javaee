@@ -1,0 +1,11 @@
+127.0.0.1 - - [15/Feb/2017:20:38:51 +0100] "GET / HTTP/1.1" 404 961
+127.0.0.1 - - [15/Feb/2017:20:38:52 +0100] "GET /PrimerProyecto/HolaMundoServlet HTTP/1.1" 200 146
+127.0.0.1 - - [15/Feb/2017:20:38:52 +0100] "GET /favicon.ico HTTP/1.1" 404 983
+0:0:0:0:0:0:0:1 - - [15/Feb/2017:20:38:58 +0100] "GET /PrimerProyecto/HolaMundoServlet HTTP/1.1" 200 146
+0:0:0:0:0:0:0:1 - - [15/Feb/2017:20:38:58 +0100] "GET /favicon.ico HTTP/1.1" 404 983
+127.0.0.1 - - [15/Feb/2017:20:52:46 +0100] "GET / HTTP/1.1" 404 961
+127.0.0.1 - - [15/Feb/2017:20:52:47 +0100] "GET /PrimerProyecto/HolaMundoServlet HTTP/1.1" 200 146
+127.0.0.1 - - [15/Feb/2017:20:52:47 +0100] "GET /favicon.ico HTTP/1.1" 404 983
+127.0.0.1 - - [15/Feb/2017:20:56:01 +0100] "GET / HTTP/1.1" 404 961
+127.0.0.1 - - [15/Feb/2017:20:56:02 +0100] "GET /PrimerProyecto/hola HTTP/1.1" 200 146
+127.0.0.1 - - [15/Feb/2017:20:56:02 +0100] "GET /favicon.ico HTTP/1.1" 404 983

@@ -1,0 +1,53 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Enumeration;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+/**
+ * 
+ * By: Salva Castell
+ * 
+ * */
+
+@WebServlet("/anyadir")
+public class AnyadirServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public AnyadirServlet() {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+		// Leemos los campos del formulario.
+		String atributo = request.getParameter("atributo");
+		String valor = request.getParameter("valor");
+		
+		// Establecemos el tipo MIME de la respuesta.
+		response.setContentType("text/html");
+		
+		// Creamos un objeto de tipo PrintWriter para escribir el HTML que
+		// devolverá al usuario.
+		PrintWriter out = response.getWriter();
+		
+		// Añadimos el par atributo/valor a la sesión del usuario.
+		HttpSession sesion = request.getSession();
+		
+		// Para guardar la clave-valor
+		sesion.setAttribute(atributo, valor);
+		
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}
