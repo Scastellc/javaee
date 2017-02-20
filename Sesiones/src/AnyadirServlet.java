@@ -62,8 +62,7 @@ public class AnyadirServlet extends HttpServlet {
 			String nombreAtributo = (String) nombresDeAtributos.nextElement();
 			String valorAtributo = (String) sesion.getAttribute(nombreAtributo);
 			out.println(nombreAtributo + " - " + valorAtributo + "<br>");
-			out.println("Valor: " + sesion.getAttribute(atributo) + "<br>");
-			out.println("<hr>");
+			
 		}
 		
 		out.println("</body>");
